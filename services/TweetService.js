@@ -1,0 +1,1 @@
+import allTweets from './tweets';
