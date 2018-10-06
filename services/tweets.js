@@ -47,8 +47,8 @@ export default [
     {
         "author": "gP3Zb76vP7WaMQJaL6LqACFFaME3",
         "authorName": "Ivan Ferreira",
-        "authorPhotoURL": "",
-        "authorUserName": "",
+        "authorPhotoURL": "https://lh4.googleusercontent.com/-uHUKGRPGmXw/AAAAAAAAAAI/AAAAAAAAAfA/J2qEDJWVrh8/photo.jpg",
+        "authorUserName": "ivan.ferreira",
         "content": "rollback no nome da bagaça",
         "timestamp": "2018-09-29T19:26:02.873Z",
         "uid": "gZJJNTC59bqQWFGrfKwJ"
@@ -56,8 +56,8 @@ export default [
     {
         "author": "gP3Zb76vP7WaMQJaL6LqACFFaME3",
         "authorName": "RTTTRRTRT",
-        "authorPhotoURL": "",
-        "authorUserName": "",
+        "authorPhotoURL": "https://lh4.googleusercontent.com/-uHUKGRPGmXw/AAAAAAAAAAI/AAAAAAAAAfA/J2qEDJWVrh8/photo.jpg",
+        "authorUserName": "ivan.ferreira",
         "content": "update no nome da bagaça",
         "timestamp": "2018-09-29T19:25:33.489Z",
         "uid": "2VO1gZ9X0BBNn6AusU5j"

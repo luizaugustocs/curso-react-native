@@ -1,31 +1,36 @@
 import allUsers from './users';
 
-const currentUser = {
-    displayName: "Luiz Augusto C. Souza",
-    email: "luizaugustocsouza@gmail.com",
-    photoURL: "https://lh4.googleusercontent.com/-OsXhvzedXaE/AAAAAAAAAAI/AAAAAAAAAAA/AAN31DVirdM9sEMEOsT6l-Gw7shT6_A1Mg/mo/photo.jpg",
-    uid: "86HYDdMh3EhPCXgxVpd9PisSpu92",
-    userName: "luizaugustocs"
-};
+const MAX_TIMEOUT = 3000;
+const MIN_TIMEOUT = 1000;
+
+let currentUser = undefined;
 
 const getCurrentUser = async () => {
-    await setTimeout(() => {}, Math.random() * 3000);
-    return currentUser
+    return new Promise(resolve => {
+        setTimeout(() => {
+            resolve(currentUser);
+        }, (MIN_TIMEOUT + (Math.random() * MAX_TIMEOUT)))
+    });
 };
 
 const getUser = async (userId) => {
-    await setTimeout(() => {}, Math.random() * 3000);
-    return allUsers[userId]
+    return new Promise(resolve => {
+        setTimeout(() => {
+            resolve(allUsers[userId]);
+        }, (MIN_TIMEOUT + (Math.random() * MAX_TIMEOUT)))
+    });
 };
 
-const getAllUsers = async() => {
-    await setTimeout(() => {}, Math.random() * 3000);
-    return Object.values(allUsers)
+const getAllUsers = async () => {
+    return new Promise(resolve => {
+        setTimeout(() => {
+            resolve(Object.values(allUsers));
+        }, (MIN_TIMEOUT + (Math.random() * MAX_TIMEOUT)))
+    });
 };
-
 
 export {
     getCurrentUser,
     getUser,
-    getAllUsers
+    getAllUsers,
 }
